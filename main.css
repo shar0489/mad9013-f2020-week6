@@ -1,0 +1,62 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.child {
+    margin: 20px;
+    padding: 30px;
+    width: 25%;
+    /* these are the flexbox items */
+  /* flex-basis: auto;
+  flex-grow: 0; */
+  /* these two will keep original content sizes */
+
+  /* these two will start the items at width 0 and then expand them equally */
+  /* flex-shrink: 1; */
+  /* shrink them equally as the width of the container is reduced */
+
+}
+
+.one {
+    background-color: aqua;
+    height: 300px;
+    flex-basis: 75px;
+    flex-grow: 2;
+}
+
+.two {
+    background-color: bisque;
+    height: 100px;
+    flex-basis: 75px;
+    flex-grow: 1;
+    align-self: flex-start;
+}
+
+.three {
+    background-color: chartreuse;
+    height: 200px;
+    flex-basis: 75px;
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
+.four {
+    background-color: darkcyan;
+    height: 400px;
+    flex-basis: 75px;
+    flex-grow: 2;
+}
+
+/* @media (min-width: 600px)  {
+    .parent {
+
+        flex-direction: column;
+    
+        
+    }
+} */
